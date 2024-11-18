@@ -1,0 +1,16 @@
+import math
+
+def is_prime(num):
+    is_prime_flag = True
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    limit = int(math.sqrt(num)) + 1
+    for i in range(5, limit, 2):
+        if num % i == 0:
+            is_prime_flag = False
+            break
+    return is_prime_flag
