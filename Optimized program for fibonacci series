@@ -1,0 +1,9 @@
+def print_fibonacci_series(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+# Example usage
+n = 10  # Change the number of terms in the series
+print_fibonacci_series(n)
