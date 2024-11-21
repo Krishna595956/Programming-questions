@@ -1,0 +1,3 @@
+n = 10  # Replace 10 with the desired number of natural numbers
+natural_numbers = [i for i in range(1, n + 1)]
+print(natural_numbers)
