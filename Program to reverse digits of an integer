@@ -1,0 +1,20 @@
+def count_digits(n):
+    # Handle negative numbers by converting to positive
+    n = abs(n)
+    
+    # If the number is 0, it has exactly one digit
+    if n == 0:
+        return 1
+    
+    # Count the digits by converting the number to a string
+    return len(str(n))
+
+# Example usage
+num = 12345
+print(f"The number of digits in {num} is {count_digits(num)}.")
+
+num = -9876543210
+print(f"The number of digits in {num} is {count_digits(num)}.")
+
+num = 0
+print(f"The number of digits in {num} is {count_digits(num)}.")
