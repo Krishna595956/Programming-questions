@@ -1,0 +1,16 @@
+# Number of rows for the pyramid
+rows = int(input("Enter the number of rows: "))
+
+# ASCII value of 'A'
+ascii_value = 65
+
+for i in range(1, rows + 1):
+    # Print spaces for alignment
+    print(" " * (rows - i), end="")
+    # Print increasing alphabets
+    for j in range(i):
+        print(chr(ascii_value + j), end="")
+    # Print decreasing alphabets
+    for j in range(i - 2, -1, -1):
+        print(chr(ascii_value + j), end="")
+    print()
